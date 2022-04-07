@@ -17,6 +17,10 @@ export interface ITaxonomyPickerProps  {
    */
   panelTitle: string;
   /**
+   * Termset Picker Panel subtitle. Default value is the name of the provided TermSet.
+   */
+  panelSubtitle?: string;
+  /**
    * Defines if the user can select only one or many term sets. Default value is false.
    */
   allowMultipleSelections?: boolean;

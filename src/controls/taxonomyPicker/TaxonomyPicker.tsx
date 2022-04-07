@@ -612,7 +612,7 @@ export class TaxonomyPicker extends React.Component<ITaxonomyPickerProps, ITaxon
           {
             loaded === true && termSetAndTerms && (
               <div key={termSetAndTerms.Id} >
-                <h3>{termSetAndTerms.Name}</h3>
+                <h3>{this.props.panelSubtitle ?? termSetAndTerms.Name}</h3>
                 <TermParent anchorId={anchorId}
                   autoExpand={null}
                   termset={termSetAndTerms}
